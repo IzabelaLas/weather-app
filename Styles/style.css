@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  font-family: "PT Sans", sans-serif;
+  margin: 40px;
+}
+h1 {
+  text-align: center;
+  color: #3a5470;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+a {
+  color: #668999;
+}
+li {
+  list-style: none;
+}
+.additional-info {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #3a5470;
+}
+.city-skyline {
+  text-align: center;
+}
+.container {
+  max-width: 80%;
+  margin: 100px auto;
+  border: solid 3px;
+  border-radius: 70px;
+  border-color: rgb(147, 195, 212);
+  background: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.current-temp {
+  font-size: 80px;
+  margin-left: 30px;
+  color: #3a5470;
+}
+.future-weather {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 50px;
+  color: #69666d;
+}
+.unit-of-temperature {
+  font-size: 20px;
+  position: relative;
+  top: -34px;
+  color: #668999;
+}
+.search {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.search-button {
+  font-family: "PT Sans", sans-serif;
+  border-radius: 10px;
+  border-color: #668999;
+  box-shadow: rgb(110, 105, 96);
+  color: #fff;
+  background-color: #668999;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.search-button:hover {
+  color: #668999;
+  background-color: #495281;
+  transition: ease-in-out;
+}
+.current-button {
+  font-family: "PT Sans", sans-serif;
+  border-radius: 10px;
+  border-color: #668999;
+  box-shadow: rgb(110, 105, 96);
+  color: #668999;
+  background-color: #495281;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.current-button:hover {
+  color: white;
+  background-color: #668999;
+  transition: ease-in-out;
+}
+.day-time {
+  text-align: center;
+  padding: 0px;
+}
+.rain {
+  color: #51698f;
+}
+.cloud {
+  color: #d4d4cf;
+}
+.snow {
+  color: #668999;
+}
+.snowing {
+  color: #304953;
+}
+.future-days {
+  font-size: 25px;
+}
+.emojis {
+  font-size: 30px;
+}
