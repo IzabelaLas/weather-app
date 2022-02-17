@@ -99,7 +99,9 @@ li {
 .emojis {
   font-size: 30px;
 }
-
+.future {
+  display: flex;
+}
 .future-days {
   font-size: 25px;
 }
