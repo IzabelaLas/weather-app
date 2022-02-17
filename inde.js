@@ -27,12 +27,11 @@ function showConditions(response) {
     response.data.main.temp
   );
   document.querySelector("#wind").innerHTML =
-    Math.round(response.data.wind.speed) + " km/h";
+    " " + Math.round(response.data.wind.speed) + " km/h";
   document.querySelector("#more-details").innerHTML =
-    response.data.weather[0].main;
-  document.querySelector("#feels-like").innerHTML = Math.round(
-    response.data.main.feels_like
-  );
+    " " + response.data.weather[0].main;
+  document.querySelector("#feels-like").innerHTML =
+    " " + Math.round(response.data.main.feels_like);
 }
 
 function searchCity(city) {

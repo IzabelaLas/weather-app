@@ -12,10 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/b98cac09f0.js"
-      crossorigin="anonymous"
-    ></script>
+   <script src="https://kit.fontawesome.com/b98cac09f0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +22,9 @@
     <link href="Styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="App">
     <div class="container">
+      <div class="weather">
       <form class="search-box" id="search-box">
         <div class="row">
          <div class="col-6">
@@ -83,14 +82,11 @@
               <li>
                 <i class="fas fa-wind" id="wind">  14km/h</i>
               </li>
-              <li>
                 <i class="fas fa-umbrella" id="feels-like">  1</i> °C
               </li>
             </ul>
           </div>
         </div>
-
-      <img src="Images/wawa.png" alt="warsaw-skyline" class="city-skyline" />
       <p class="future">
       <div class="row row-cols-5 future-weather future-days">
         <div class="col-2">Wed</div>
@@ -115,10 +111,13 @@
         <div class="col-2"><strong>-1°</strong>| -4°</div>
       </div>
       </p>
-    </div>
+    
     <p class="copyright">
       <a href="https://github.com/IzabelaLas/weather-app" target="blank">Open-source code</a> by Izabela Łaszczuk
     </p>
+    </div>
+  </div>
+  </div>
     <script src="inde.js"></script>
   </body>
 </html>
