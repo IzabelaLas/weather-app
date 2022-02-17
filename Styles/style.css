@@ -28,10 +28,14 @@ li {
 .container {
   max-width: 80%;
   margin: 100px auto;
+  margin-bottom: 0;
   border: solid 3px;
   border-radius: 70px;
   border-color: rgb(147, 195, 212);
   background: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.copyright {
+  text-align: center;
 }
 .current-temp {
   font-size: 80px;
