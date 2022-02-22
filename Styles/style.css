@@ -24,9 +24,9 @@ li {
 }
 
 .additional-info {
-  margin-top: 30px;
-  font-size: 20px;
   color: #3a5470;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 .app {
@@ -69,31 +69,9 @@ li {
   color: #3a5470;
 }
 
-.current-button {
-  font-family: "PT Sans", sans-serif;
-  border-radius: 10px;
-  border-color: #668999;
-  box-shadow: rgb(110, 105, 96);
-  color: #668999;
-  background-color: #495281;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.current-button:hover {
-  color: white;
-  background-color: #668999;
-  transition: ease-in-out;
-}
-
 .day-time {
   text-align: center;
-  padding: 0px;
+  padding: 10px;
 }
 
 .emojis {
@@ -115,35 +93,6 @@ li {
 
 .rain {
   color: #51698f;
-}
-
-.search {
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.search-button {
-  font-family: "PT Sans", sans-serif;
-  border-radius: 10px;
-  border-color: #668999;
-  box-shadow: rgb(110, 105, 96);
-  color: #fff;
-  background-color: #668999;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.search-button:hover {
-  color: #668999;
-  background-color: #495281;
-  transition: ease-in-out;
 }
 
 .snow {
