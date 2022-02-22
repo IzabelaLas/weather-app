@@ -84,3 +84,10 @@ currentButton.addEventListener("click", currentPosition);
 
 let searchButton = document.querySelector("#search-box");
 searchButton.addEventListener("submit", searchedPosition);
+
+let body = document.querySelector("body");
+body.addEventListener("click", changeThePicture);
+
+function changeThePicture() {
+  document.body.style.backgroundImage = "url('Images/lisbon.jpg')";
+}
