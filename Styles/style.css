@@ -41,7 +41,6 @@ li {
 
 .col-6 {
   max-width: 50%;
-  position: relative;
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
@@ -65,8 +64,10 @@ li {
 
 .current-temp {
   font-size: 80px;
-  margin-left: 30px;
   color: #3a5470;
+  font-weight: 400;
+  margin-left: 10px;
+  position: relative;
 }
 
 .day-time {
@@ -104,10 +105,11 @@ li {
 }
 
 .unit-of-temperature {
+  color: #668999;
+  display: inline-block;
   font-size: 20px;
   position: relative;
   top: -34px;
-  color: #668999;
 }
 
 .weather {
