@@ -59,22 +59,29 @@ function currentPosition(event) {
   navigator.geolocation.getCurrentPosition(currentLocation);
 }
 
-function changeDegrees(event) {
+function changeToFarenheit(event) {
   event.preventDefault();
   let temperature = document.querySelector("#how-many-degrees");
-  temperature.innerHTML = Math.round((2 * 9) / 5 + 32);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsius * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
 }
-function changeDegreesAgain(event) {
+function changeToCelcius(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperature = document.querySelector("#how-many-degrees");
-  temperature.innerHTML = "2";
+  temperature.innerHTML = Math.round(celsius);
 }
 
-let celsius = document.querySelector("#celsius-link");
-celsius.addEventListener("click", changeDegreesAgain);
+let celsius = null;
 
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", changeDegrees);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", changeToCelcius);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", changeToFarenheit);
 
 let date = document.querySelector("#day-time");
 let now = new Date();
