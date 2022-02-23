@@ -22,7 +22,8 @@ function changeDay(date) {
 }
 
 function showConditions(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = response.data.name + ",";
+  document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#how-many-degrees").innerHTML = Math.round(
     response.data.main.temp
   );
