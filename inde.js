@@ -20,6 +20,13 @@ function changeDay(date) {
   let day = days[dayIndex];
   return `${day}, ${hours}:${minutes}`;
 }
+function changeThePicture(response) {
+  if (response === "AE") {
+    return `url ("https://images.unsplash.com/photo-1527288012656-13ea8f91bd63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80")`;
+  } else {
+    return `url ("https://images.unsplash.com/photo-1585208798174-6cedd86e019a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80")`;
+  }
+}
 
 function showConditions(response) {
   document.querySelector("#city").innerHTML = response.data.name + ",";
@@ -33,6 +40,10 @@ function showConditions(response) {
     " " + response.data.weather[0].main;
   document.querySelector("#feels-like").innerHTML =
     " " + Math.round(response.data.main.feels_like);
+
+  document.body.style.backgroundImage = changeThePicture(
+    response.data.sys.country
+  );
 }
 
 function searchCity(city) {
@@ -92,10 +103,3 @@ currentButton.addEventListener("click", currentPosition);
 
 let searchButton = document.querySelector("#search-box");
 searchButton.addEventListener("submit", searchedPosition);
-
-let body = document.querySelector("body");
-body.addEventListener("click", changeThePicture);
-
-function changeThePicture() {
-  document.body.style.backgroundImage = "url('Images/lisbon.jpg')";
-}
