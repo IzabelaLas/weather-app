@@ -26,13 +26,13 @@ li {
 .additional-info {
   color: #3a5470;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .app {
   box-sizing: border-box;
   max-width: 800px;
-  margin: 60px auto;
+  margin: 20px auto;
 }
 
 .cloud {
