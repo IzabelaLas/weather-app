@@ -85,7 +85,6 @@ function changeToCelcius(event) {
   let temperature = document.querySelector("#how-many-degrees");
   temperature.innerHTML = Math.round(celsius);
 }
-
 let celsius = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
