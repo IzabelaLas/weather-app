@@ -115,6 +115,8 @@ function changeThePicture(response) {
     return `url("https://images.unsplash.com/photo-1621680696874-edd80ce57b72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1291&q=80")`;
   } else if (response === "VN") {
     return `url("https://images.unsplash.com/photo-1561461221-959c3f16234b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")`;
+  } else if (response === "UA") {
+    return `url("https://images.unsplash.com/photo-1543298782-32907da49e94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80")`;
   } else {
     return `url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")`;
   }
@@ -196,4 +198,4 @@ currentButton.addEventListener("click", currentPosition);
 let searchButton = document.querySelector("#search-box");
 searchButton.addEventListener("submit", searchedPosition);
 
-searchCity("New York");
+searchCity("San Francisco");
