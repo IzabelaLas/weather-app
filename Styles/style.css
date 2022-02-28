@@ -17,6 +17,7 @@ h1 {
 
 a {
   color: #668999;
+  text-decoration: none;
 }
 
 li {
@@ -70,6 +71,14 @@ li {
   position: relative;
 }
 
+.current-temp .active {
+  color: #3a5470;
+  cursor: default;
+}
+
+.current-temp .active:hover {
+  text-decoration: none;
+}
 .day-time {
   text-align: center;
   padding: 10px;

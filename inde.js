@@ -136,6 +136,7 @@ function showConditions(response) {
   document.body.style.backgroundImage = changeThePicture(
     response.data.sys.country
   );
+  celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -167,7 +168,7 @@ function changeToFarenheit(event) {
   let temperature = document.querySelector("#how-many-degrees");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsius * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 function changeToCelcius(event) {
@@ -175,9 +176,9 @@ function changeToCelcius(event) {
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let temperature = document.querySelector("#how-many-degrees");
-  temperature.innerHTML = Math.round(celsius);
+  temperature.innerHTML = Math.round(celsiusTemperature);
 }
-let celsius = null;
+let celsiusTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", changeToCelcius);
@@ -194,3 +195,5 @@ currentButton.addEventListener("click", currentPosition);
 
 let searchButton = document.querySelector("#search-box");
 searchButton.addEventListener("submit", searchedPosition);
+
+searchCity("New York");
