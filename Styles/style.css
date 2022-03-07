@@ -36,10 +36,6 @@ li {
   margin: 20px auto;
 }
 
-.cloud {
-  color: #d4d4cf;
-}
-
 .col-6 {
   max-width: 50%;
   padding-right: 15px;
@@ -59,7 +55,8 @@ li {
 }
 
 .copyright {
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: -20px;
   text-align: center;
 }
 
@@ -84,9 +81,6 @@ li {
   padding: 10px;
 }
 
-.emojis {
-  font-size: 30px;
-}
 .future {
   display: flex;
 }
@@ -99,18 +93,6 @@ li {
   text-align: center;
   margin-left: 50px;
   color: #69666d;
-}
-
-.rain {
-  color: #51698f;
-}
-
-.snow {
-  color: #668999;
-}
-
-.snowing {
-  color: #304953;
 }
 
 .unit-of-temperature {
