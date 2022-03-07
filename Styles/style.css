@@ -28,6 +28,7 @@ li {
   color: #3a5470;
   font-size: 20px;
   margin-top: 20px;
+  opacity: 0.8;
 }
 
 .app {
@@ -61,21 +62,12 @@ li {
 }
 
 .current-temp {
-  font-size: 80px;
   color: #3a5470;
   font-weight: 400;
   margin-left: 10px;
   position: relative;
 }
 
-.current-temp .active {
-  color: #3a5470;
-  cursor: default;
-}
-
-.current-temp .active:hover {
-  text-decoration: none;
-}
 .day-time {
   text-align: center;
   padding: 10px;
@@ -94,13 +86,18 @@ li {
   margin-left: 50px;
   color: #69666d;
 }
-
+.how-any-degrees {
+  font-size: 90px;
+  margin-left: 30px;
+  margin-right: 0px;
+}
 .unit-of-temperature {
-  color: #668999;
+  color: #3a5470;
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
   position: relative;
-  top: -34px;
+  top: -45px;
 }
 
 .weather {

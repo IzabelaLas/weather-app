@@ -211,28 +211,7 @@ function currentPosition(event) {
   navigator.geolocation.getCurrentPosition(currentLocation);
 }
 
-function changeToFarenheit(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#how-many-degrees");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperature.innerHTML = Math.round(fahrenheitTemperature);
-}
-function changeToCelcius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperature = document.querySelector("#how-many-degrees");
-  temperature.innerHTML = Math.round(celsiusTemperature);
-}
 let celsiusTemperature = null;
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", changeToCelcius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", changeToFarenheit);
 
 let date = document.querySelector("#day-time");
 let now = new Date();
