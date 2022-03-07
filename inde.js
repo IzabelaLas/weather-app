@@ -20,6 +20,30 @@ function changeDay(date) {
   let day = days[dayIndex];
   return `${day}, ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `  
+        <div class="col-2">
+          <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-emoji">
+          <i class="fas fa-cloud-showers-heavy rain"></i>
+          </div>
+          <div class="weather-forecast-temperatures">
+           <span class="weather-forecast-temperature-max">3°</span>
+           <span class="weather-forecast-temperature-min">-2°</span>
+           </div>
+          </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function changeThePicture(response) {
   if (response === "AE") {
     return `url("https://images.unsplash.com/photo-1527288012656-13ea8f91bd63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80")`;
@@ -199,3 +223,4 @@ let searchButton = document.querySelector("#search-box");
 searchButton.addEventListener("submit", searchedPosition);
 
 searchCity("San Francisco");
+displayForecast();
